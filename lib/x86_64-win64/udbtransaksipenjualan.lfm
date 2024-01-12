@@ -1,0 +1,186 @@
+object frmTransaksi: TfrmTransaksi
+  Left = 396
+  Height = 617
+  Top = 206
+  Width = 768
+  Caption = 'Form Transaksi'
+  ClientHeight = 617
+  ClientWidth = 768
+  DesignTimePPI = 120
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 236
+    Height = 45
+    Top = 16
+    Width = 232
+    Caption = 'Transaksi Penjualan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 40
+    Height = 56
+    Top = 96
+    Width = 344
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 56
+    ClientWidth = 344
+    Options = []
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 48
+    Height = 152
+    Top = 168
+    Width = 624
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 1
+  end
+  object DBGrid2: TDBGrid
+    Left = 48
+    Height = 152
+    Top = 376
+    Width = 632
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource2
+    TabOrder = 2
+  end
+  object btnTambahData: TButton
+    Left = 333
+    Height = 35
+    Top = 549
+    Width = 106
+    Caption = 'Tambah Data'
+    OnClick = btnTambahDataClick
+    TabOrder = 3
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 168
+    Top = 216
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'tanggal'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'customer'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'sub_total'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'diskon'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'total'
+        DataType = ftFloat
+        Precision = -1
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM transaksi'
+    )
+    Params = <>
+    Macros = <>
+    Left = 280
+    Top = 216
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'latihan1'
+    KeepConnection = True
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    ConnectorType = 'ODBC'
+    Left = 376
+    Top = 216
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 512
+    Top = 216
+  end
+  object DataSource2: TDataSource
+    DataSet = SQLQuery2
+    Left = 167
+    Top = 433
+  end
+  object SQLQuery2: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'transaksi_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'barang_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'jumlah'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'diskon'
+        DataType = ftInteger
+        Precision = -1
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM detail_transaksi'
+    )
+    Params = <>
+    Macros = <>
+    Left = 272
+    Top = 432
+  end
+end

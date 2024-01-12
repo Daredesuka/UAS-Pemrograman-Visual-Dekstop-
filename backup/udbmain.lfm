@@ -1,0 +1,41 @@
+object frmMain: TfrmMain
+  Left = 958
+  Height = 516
+  Top = 214
+  Width = 633
+  Caption = 'Form Main'
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object MainMenu1: TMainMenu
+    Left = 88
+    Top = 48
+    object menuFIle: TMenuItem
+      Caption = 'File'
+      object menuLogin: TMenuItem
+        Caption = 'Login'
+        OnClick = menuLoginClick
+      end
+      object menuLogout: TMenuItem
+        Caption = 'Logout'
+        OnClick = menuLogoutClick
+      end
+      object menuExit: TMenuItem
+        Caption = 'Exit'
+        OnClick = menuExitClick
+      end
+    end
+    object Menudatamaster: TMenuItem
+      Caption = 'data master'
+      OnClick = MenudatamasterClick
+    end
+    object menuTransaksi: TMenuItem
+      Caption = 'transaksi'
+      OnClick = menuTransaksiClick
+    end
+    object menuLaporan: TMenuItem
+      Caption = 'laporan'
+    end
+  end
+end

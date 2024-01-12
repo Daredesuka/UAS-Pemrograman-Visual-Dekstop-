@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="51" Y="33"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbMain"/>
+        <TopLine Value="102"/>
+        <CursorPos X="3" Y="122"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udblogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbLogin"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="45"/>
+        <CursorPos X="31" Y="59"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMasterDetailData"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbMasterDetailData"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="60"/>
+        <CursorPos X="17" Y="52"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbtambahdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TfrmTambah"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbTambahData"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="49"/>
+        <CursorPos X="68" Y="80"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbtransaksipenjualan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTransaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="26"/>
+        <CursorPos X="44" Y="30"/>
+        <UsageCount Value="52"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbtambahtransaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTambahTransaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbTambahTransaksi"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="10"/>
+        <CursorPos X="79" Y="3"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbtambahdetailtransaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTambahDetailTransaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbTambahDetailTransaksi"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="12"/>
+        <CursorPos X="81" Y="7"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbpencariandata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDataBarang"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbPencarianData"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="44"/>
+        <CursorPos X="11" Y="63"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbkategoribarang.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmKategoriBarang"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbKategoriBarang"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="33" Y="129"/>
+        <UsageCount Value="24"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbreport.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TfrmReport"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbReport"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="41"/>
+        <CursorPos X="19" Y="14"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udblaporan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbLaporan"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="12" Y="13"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2950"/>
+        <CursorPos Y="2979"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udblaporan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLaporan"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbLaporan"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="36"/>
+        <CursorPos X="57" Y="48"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\components\lazreport\source\lr_class.pas"/>
+        <UnitName Value="LR_Class"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11968"/>
+        <CursorPos Y="11980"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="47" Column="6" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="48" Column="6" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="50" Column="6" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="74" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="75" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="90" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="58" Column="23" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="81" Column="31" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="64" Column="5" TopLine="58"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="76" Column="44" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <Caret Line="80" Column="5" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="udblogin.pas"/>
+        <Caret Line="59" Column="31" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="project1.lpr"/>
+        <Caret Line="15" Column="47" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmain.pas"/>
+        <Caret Line="32" Column="26" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="28" Column="19" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="63" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="47" Column="10" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="48" Column="10" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="49" Column="10" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="71" Column="5" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="74" Column="94" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="49" Column="2" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="66" Column="5" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="65" Column="5" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="64" Column="5" TopLine="45"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="50" Column="7" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="47" Column="6" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmain.pas"/>
+        <Caret Line="9" Column="75" TopLine="93"/>
+      </Position>
+      <Position>
+        <Filename Value="udbmain.pas"/>
+        <Caret Line="122" Column="3" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="udblaporan.pas"/>
+        <Caret Line="48" Column="57" TopLine="36"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

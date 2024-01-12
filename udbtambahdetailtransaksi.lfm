@@ -1,0 +1,66 @@
+object frmTambahDetailTransaksi: TfrmTambahDetailTransaksi
+  Left = 402
+  Height = 453
+  Top = 266
+  Width = 646
+  Caption = 'Form Tambah Detail Transaksi'
+  ClientHeight = 453
+  ClientWidth = 646
+  DesignTimePPI = 120
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 176
+    Height = 45
+    Top = 33
+    Width = 285
+    Caption = 'Tambah Detail Transaksi'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 73
+    Height = 20
+    Top = 114
+    Width = 86
+    Caption = 'Pilih Barang :'
+    ParentColor = False
+  end
+  object dbLookupBarang: TDBLookupComboBox
+    Left = 184
+    Height = 28
+    Top = 114
+    Width = 237
+    ListFieldIndex = 0
+    LookupCache = False
+    TabOrder = 0
+  end
+  object Label3: TLabel
+    Left = 72
+    Height = 20
+    Top = 168
+    Width = 86
+    Caption = 'Pilih Barang :'
+    ParentColor = False
+  end
+  object edtJumlahBarang: TEdit
+    Left = 186
+    Height = 28
+    Top = 168
+    Width = 234
+    TabOrder = 1
+  end
+  object btnTambahBarang: TButton
+    Left = 149
+    Height = 47
+    Top = 241
+    Width = 148
+    Caption = 'Tambah Barang'
+    TabOrder = 2
+  end
+end

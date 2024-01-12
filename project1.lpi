@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="project1"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="lazreport"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbMain"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udblogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbLogin"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbmasterdetaildata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMasterDetailData"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbMasterDetailData"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbtambahdata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TfrmTambah"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbTambahData"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbtransaksipenjualan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTransaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbtambahtransaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTambahTransaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbTambahTransaksi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbtambahdetailtransaksi.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmTambahDetailTransaksi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbTambahDetailTransaksi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbpencariandata.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDataBarang"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbPencarianData"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbkategoribarang.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmKategoriBarang"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbKategoriBarang"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udbreport.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="TfrmReport"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbReport"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udblaporan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbLaporan"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udblaporan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLaporan"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="udbLaporan"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="project1"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

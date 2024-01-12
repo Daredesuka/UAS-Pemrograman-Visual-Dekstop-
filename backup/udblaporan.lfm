@@ -1,0 +1,225 @@
+object frmLaporan: TfrmLaporan
+  Left = 489
+  Height = 589
+  Top = 244
+  Width = 1086
+  Caption = 'frmLaporan'
+  ClientHeight = 589
+  ClientWidth = 1086
+  DesignTimePPI = 120
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 240
+    Height = 45
+    Top = 16
+    Width = 95
+    Caption = 'Laporan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 24
+    Height = 253
+    Top = 160
+    Width = 1000
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 64
+    Height = 31
+    Top = 104
+    Width = 301
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 31
+    ClientWidth = 301
+    Options = []
+    TabOrder = 1
+  end
+  object btnCetak: TButton
+    Left = 496
+    Height = 35
+    Top = 464
+    Width = 80
+    Caption = 'Cetak'
+    OnClick = btnCetakClick
+    TabOrder = 2
+  end
+  object SQLQuery1: TSQLQuery
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'transaksi_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'barang_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'jumlah'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'diskon'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'id_barang'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'kategori'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'kategori_id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 30
+      end    
+      item
+        Name = 'gambar'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'harga_beli'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'harga_jual'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'stok'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'id_1'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'nama_kategori'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'id_2'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'tanggal'
+        DataType = ftDateTime
+        Precision = -1
+      end    
+      item
+        Name = 'customer'
+        DataType = ftString
+        Precision = -1
+        Size = 100
+      end    
+      item
+        Name = 'sub_total'
+        DataType = ftFloat
+        Precision = -1
+      end    
+      item
+        Name = 'diskon_1'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'total'
+        DataType = ftFloat
+        Precision = -1
+      end>
+    Active = True
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM detail_transaksi JOIN data_barang JOIN kategori JOIN transaksi'
+      ''
+    )
+    Params = <>
+    Macros = <>
+    Left = 88
+    Top = 328
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = SQLConnector1
+    Left = 168
+    Top = 336
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = True
+    LoginPrompt = False
+    DatabaseName = 'latihan1'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    ConnectorType = 'ODBC'
+    Left = 264
+    Top = 336
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    Left = 359
+    Top = 337
+  end
+  object frReport1: TfrReport
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    Left = 451
+    Top = 301
+  end
+  object frDBDataSet1: TfrDBDataSet
+    DataSet = SQLQuery1
+    Left = 538
+    Top = 317
+  end
+end

@@ -1,0 +1,133 @@
+object frmLogin: TfrmLogin
+  Left = 535
+  Height = 474
+  Top = 238
+  Width = 560
+  Caption = 'Form Login'
+  ClientHeight = 474
+  ClientWidth = 560
+  DesignTimePPI = 120
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 176
+    Height = 55
+    Top = 48
+    Width = 159
+    Caption = 'Form Login'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -33
+    Font.Name = 'Dubai'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 64
+    Height = 20
+    Top = 144
+    Width = 73
+    Caption = 'Username :'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 64
+    Height = 20
+    Top = 200
+    Width = 68
+    Caption = 'Password :'
+    ParentColor = False
+  end
+  object edtUsername: TEdit
+    Left = 160
+    Height = 28
+    Top = 144
+    Width = 256
+    TabOrder = 0
+  end
+  object edtPassword: TEdit
+    Left = 160
+    Height = 28
+    Top = 200
+    Width = 256
+    TabOrder = 1
+  end
+  object btnLogin: TButton
+    Left = 112
+    Height = 36
+    Top = 296
+    Width = 87
+    Caption = 'Login'
+    OnClick = btnLoginClick
+    TabOrder = 2
+  end
+  object btnCancel: TButton
+    Left = 240
+    Height = 36
+    Top = 296
+    Width = 87
+    Caption = 'Cancel'
+    OnClick = btnCancelClick
+    TabOrder = 3
+  end
+  object SQLQuery1: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftAutoInc
+        Precision = -1
+      end    
+      item
+        Name = 'username'
+        DataType = ftString
+        Precision = -1
+        Size = 20
+      end    
+      item
+        Name = 'password'
+        DataType = ftString
+        Precision = -1
+        Size = 250
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 200
+      end    
+      item
+        Name = 'role'
+        DataType = ftSmallint
+        Precision = -1
+      end>
+    Database = SQLConnector1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM user'
+    )
+    Params = <>
+    Macros = <>
+    Left = 68
+    Top = 370
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Database = SQLConnector1
+    Left = 201
+    Top = 387
+  end
+  object SQLConnector1: TSQLConnector
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'latihan1'
+    KeepConnection = True
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    ConnectorType = 'ODBC'
+    Left = 404
+    Top = 389
+  end
+end
