@@ -9,4 +9,3 @@ Dosen Pengampu  : Agung Nugroho, S.Kom., M.Kom.
 ```
 
 <h3>Demo</h3>
-https://youtu.be/WLWt7HX-I-g
